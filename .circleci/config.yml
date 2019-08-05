@@ -16,7 +16,7 @@ jobs:
             if [[ -z "<< parameters.api_key >>" ]]; then
               bash <(curl -s -L https://github.com/whitesource/fs-agent-distribution/raw/master/standAlone/wss_agent_orb.sh) -c ../wss-unified-agent.config 
             else
-              bash <(curl -s -L https://github.com/whitesource/fs-agent-distribution/raw/master/standAlone/wss_agent_orb.sh) -apiKey << parameters.api_key >> -c ../wss-unified-agent.config
+              bash <(curl -s -L https://github.com/whitesource/fs-agent-distribution/raw/master/standAlone/wss_agent_orb.sh) -apiKey a420fcc1a4194e2898fef7b0d044356d83023a9d21fe4f869567fae104789d8c -c ../wss-unified-agent.config
             fi
             
 workflows:
