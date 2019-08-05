@@ -11,21 +11,7 @@ jobs:
   node:
     docker:
       - image: circleci/openjdk:8-jdk
-  scan:
-    executor: java
-    parameters:
-      api_key:
-        description: Unique identifier of the organization. Can be retrieved from the admin page in your WhiteSource account.
-        type: string
-        default: ""
-      directory:
-        description: Comma separated list of directories and / or files to scan.
-        type: string
-        default: "."
-      config_file_path:
-        description: Configuration file name (including file path).
-        type: string
-        default: "./whitesource-fs-agent.config"
+
     steps:
       - checkout
       - run:
